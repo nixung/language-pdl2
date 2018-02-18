@@ -1,12 +1,12 @@
 {
   "name": "language-pdl2",
   "version": "0.0.0",
-  "description": "A short description of your language package",
+  "description": "Support for PDL2 language in Atom",
   "keywords": [
     "language",
     "grammar"
   ],
-  "repository": "https://github.com/atom/language-pdl2",
+  "repository": "https://github.com/nixung/language-pdl2",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
