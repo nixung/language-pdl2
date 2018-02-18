@@ -4,7 +4,7 @@
 'scopeName': 'source.pdl2'
 'name': 'Pdl2'
 'fileTypes': [
-  'extension'
+  'pdl'
 ]
 'patterns': [
   {
