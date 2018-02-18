@@ -7,8 +7,13 @@
   'pdl'
 ]
 'patterns': [
+  # Comments
   {
-    'match': '^\\s*@@.*$'
-    'name': 'comment'
+    'begin': '--'
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.comment.pdl2'
+    'end': '\\n'
+    'name': 'comment.line.double-dash.pdl2'
   }
 ]
