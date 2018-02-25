@@ -1,4 +1,63 @@
 '.source.pdl2':
-  'Method documentation':
-    'prefix': 'doc'
-    'body': '@@ ${1:method} - ${2:description}'
+  'IF':
+    'prefix': 'if'
+    'body': """
+      IF ${1:bool_exp}:
+      \t${2:statement}
+      ENDIF$0
+    """
+
+  'IF ELSE':
+    'prefix': 'ife'
+    'body': """
+      IF ${1:bool_exp} THEN
+      \t${2:statement}
+      ELSE
+      \t${3:statement}
+      ENDIF$0
+    """
+
+  'SELECT':
+    'prefix': 'select'
+    'body': """
+      SELECT ${1:int_exp} OF
+      \tCASE ${2:int_val_1}:
+      \t\t${3:statement}
+      \tCASE ${4:int_val_2}:
+      \t\t${5:statement}
+      \tELSE:
+      \t\t${6:statement}
+      ENDSELECT$0
+    """
+
+  'FOR ... TO ... DO':
+    'prefix': 'for'
+    'body': """
+      FOR ${1:int_var := start_val} TO ${2:end_val} DO
+      \t${3:statement}
+      ENDFOR$0
+    """
+
+  'FOR ... DOWNTO ... DO':
+    'prefix': 'ford'
+    'body': """
+      FOR ${1:int_var := start_val} DOWNTO ${2:end_val} DO
+      \t${3:statement}
+      ENDFOR$0
+    """
+
+  'WHILE':
+    'prefix': 'while'
+    'body': """
+      WHILE ${1:bool_exp} DO
+      \t${2:statement}
+      ENDWHILE$0
+    """
+
+  'REPEAT':
+    'prefix': 'repeat'
+    'body': """
+      REPEAT
+      \t${2:statement}
+      UNTIL ${0:bool_exp}
+    """
