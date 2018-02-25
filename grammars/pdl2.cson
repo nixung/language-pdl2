@@ -39,7 +39,9 @@
   # Operators
   {
     'match': '\\b(DIV|MOD|AND|NOT|OR|XOR|ROR|ROL|SHR|SHL)\\b'
-    'name': 'keyword.operator.pdl2'
+    'name': 'entity.name.function.pdl2'
+    # todo
+    # 'name': 'keyword.operator.pdl2'
   }
 
   # Numeric constants
@@ -51,7 +53,7 @@
   # Other constants
   {
     'match': '\\b(TRUE|FALSE)\\b'
-    'name': 'constant.language.pdl2'
+    'name': 'constant.other.pdl2'
   }
 
   # Single quoted strings
