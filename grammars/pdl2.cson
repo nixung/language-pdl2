@@ -6,7 +6,7 @@
 'patterns': [
   # Data types
   {
-    'match': '\\b(INTEGER|REAL|BOOLEAN|STRING|ARRAY|RECORD|VECTOR|POSITION|JOINTPOS|XTNDPOS|NODE|PATH|SEMAPHORE)\\b'
+    'match': '\\b(INTEGER|REAL|BOOLEAN|STRING|ARRAY|VECTOR|POSITION|JOINTPOS|XTNDPOS|NODE|PATH|SEMAPHORE)\\b'
     'name': 'storage.type.pdl2'
     # 'name': 'entity.name.type.pdl2'
   }
