@@ -1,3 +1,4 @@
 '.source.pdl2':
   'editor':
-    'commentStart': '@@ '
+    'tabLength': 2
+    'commentStart': '-- '
