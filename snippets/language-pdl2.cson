@@ -61,3 +61,14 @@
       \t${2:statement}
       UNTIL ${0:bool_exp}
     """
+
+  'ROUTINE':
+    'prefix': 'routine'
+    'body': """
+      ROUTINE $1:
+      VAR
+      CONST
+      BEGIN
+      \t$0
+      END $1
+    """
