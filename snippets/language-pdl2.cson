@@ -2,7 +2,7 @@
   'IF':
     'prefix': 'if'
     'body': """
-      IF ${1:bool_exp}:
+      IF ${1:bool_exp} THEN
       \t${2:statement}
       ENDIF$0
     """
