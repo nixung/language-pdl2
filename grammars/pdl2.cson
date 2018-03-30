@@ -50,12 +50,6 @@
     'name': 'constant.numeric.pdl2'
   }
 
-  # Other constants
-  {
-    'match': '\\b(TRUE|FALSE)\\b'
-    'name': 'constant.other.pdl2'
-  }
-
   # Single quoted strings
   {
     'begin': '\''
