@@ -66,8 +66,8 @@
     'prefix': 'routine'
     'body': """
       ROUTINE $1:
-      VAR
       CONST
+      VAR
       BEGIN
       \t$0
       END $1
