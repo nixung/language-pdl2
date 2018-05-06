@@ -1,6 +1,6 @@
 {
   "name": "language-pdl2",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "Support for PDL2 language in Atom",
   "keywords": [
     "language",
