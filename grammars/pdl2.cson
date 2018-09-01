@@ -13,7 +13,7 @@
 
   # VP2 Data types
   {
-    'match': '\\b(vp2polygon|vp2oval|vp2polyline|vp2roundrect|vp2rect|vp2arc|vp2line|vp2image|vp2message_bar|vp2menu|vp2menubar|vp2spindial|vp2textbox|vp2checkgroup|vp2checkbox|vp2combobox|vp2progressbar|vp2label|vp2button|vp2pane|vp2tabpane|vp2tabsheet|vp2screen|VP2treenode)\\b'
+    'match': '\\b(VP2screen|VP2button|VP2label|VP2textbox|VP2menu|VP2menubar|VP2pane|VP2tabpane|VP2tabsheet|VP2progressbar|VP2treenode|VP2checkgroup|VP2checkbox|VP2combobox|VP2spindial|VP2message_bar|VP2polygon|VP2oval|VP2polyline|VP2roundrect|VP2rect|VP2arc|VP2line|VP2image)\\b'
     'name': 'storage.type.pdl2'
     # 'name': 'entity.name.type.pdl2'
   }
@@ -26,15 +26,13 @@
 
   # VP2 constants
   {
-    'match':
-    '\\b(vp2_noborder|vp2_bstyle1|vp2_bstyle2|vp2_bstyle3|vp2_bstyle4|vp2_bstyle5|vp2_bstyle6|vp2_bstyle7|vp2_bstyle8|vp2_bstyle9|vp2_bstyle10|vp2_bstyle11|vp2_bstyle12|vp2_bstyle13|vp2_bstyle14|vp2_bstyle15|vp2_haleft|vp2_haright|vp2_hacenter|vp2_vatop|vp2_vacenter|vp2_vabot|vp2_3dlook|vp2_fill|vp2_text_left|vp2_square|vp2_sunken|vp2_mark_sel|vp2_symbol_spot|vp2_symbol_cross|vp2_symbol_check|vp2_wfixed|vp2_notcomaulnf|vp2_b_ok|vp2_b_cancel|vp2_b_yes|vp2_b_no|vp2_b_abort|vp2_b_retry|vp2_b_skip|vp2_b_ack|vp2_b_ignore|vp2_b_reset|vp2_b_true|vp2_b_false|vp2_b_on|vp2_b_off|vp2_sev_info|vp2_sev_warn|vp2_sev_err|vp2_useicon|vp2_showscrnm|vp2_table_no_sort|vp2_sticky|vp2_exclusive|vp2_dtype_free|vp2_dtype_numi|vp2_dtype_numf|vp2_dtype_ident|vp2_dtype_pass|vp2_dtype_alpha|vp2_mode_ovr|vp2_presel|vp2_allkeys|vp2_navgoto|vp2_typstick|vp2_typnrm|vp2_typlngpr|vp2_typterm|vp2_isfloatmen|vp2_scrlhor|vp2_scrlver|vp2_noautoup|vp2_noremove|vp2_shownmid|vp2_showdim|vp2_showinf|vp2_plain|vp2_italic|vp2_bold|vp2_on_error|vp2_action_performed|vp2_focus_gained|vp2_focus_lost|vp2_chooser_gained|vp2_chooser_lost|vp2_on_visible|vp2_on_hidden|vp2_on_pressed|vp2_on_win_close|vp2_on_released|vp2_on_resize|vp2_on_textchange|Vp2_on_open|Vp2_on_close|vp2_on_long_pressed|vp2_on_mouse_pressed|key pressed|vp2_on_mouse_released|key released|vp2_on_cell_event|vp2_on_keypress|vp2_on_keypressed|vp2_idok|vp2_idcancel|vp2_idyes|vp2_idno|vp2_idabort|vp2_idretry|vp2_idskip|vp2_idack|vp2_idignore|vp2_idreset|vp2_idtrue|vp2_idfalse|vp2_idon|vp2_idoff|PDV_TP|SCRN_MOTION|SCRN_ALARM|SCRN_PROG|SCRN_IDE|SCRN_IO|SCRN_APPL|SCRN_FILE|SCRN_SETUP|SCRN_DATA|SCRN_SERVICE|SCRN_TPINT|SCRN_VP2|SCRN_LOGIN)\\b'
+    'match':    '\\b(vp2_noborder|vp2_bstyle1|vp2_bstyle2|vp2_bstyle3|vp2_bstyle4|vp2_bstyle5|vp2_bstyle6|vp2_bstyle7|vp2_bstyle8|vp2_bstyle9|vp2_bstyle10|vp2_bstyle11|vp2_bstyle12|vp2_bstyle13|vp2_bstyle14|vp2_bstyle15|vp2_haleft|vp2_haright|vp2_hacenter|vp2_vatop|vp2_vacenter|vp2_vabot|vp2_3dlook|vp2_fill|vp2_text_left|vp2_square|vp2_sunken|vp2_mark_sel|vp2_symbol_spot|vp2_symbol_cross|vp2_symbol_check|vp2_wfixed|vp2_notcomaulnf|vp2_b_ok|vp2_b_cancel|vp2_b_yes|vp2_b_no|vp2_b_abort|vp2_b_retry|vp2_b_skip|vp2_b_ack|vp2_b_ignore|vp2_b_reset|vp2_b_true|vp2_b_false|vp2_b_on|vp2_b_off|vp2_sev_info|vp2_sev_warn|vp2_sev_err|vp2_useicon|vp2_showscrnm|vp2_table_no_sort|vp2_sticky|vp2_exclusive|vp2_dtype_free|vp2_dtype_numi|vp2_dtype_numf|vp2_dtype_ident|vp2_dtype_pass|vp2_dtype_alpha|vp2_mode_ovr|vp2_presel|vp2_allkeys|vp2_navgoto|vp2_typstick|vp2_typnrm|vp2_typlngpr|vp2_typterm|vp2_isfloatmen|vp2_scrlhor|vp2_scrlver|vp2_noautoup|vp2_noremove|vp2_shownmid|vp2_showdim|vp2_showinf|vp2_plain|vp2_italic|vp2_bold|vp2_on_error|vp2_action_performed|vp2_focus_gained|vp2_focus_lost|vp2_chooser_gained|vp2_chooser_lost|vp2_on_visible|vp2_on_hidden|vp2_on_pressed|vp2_on_win_close|vp2_on_released|vp2_on_resize|vp2_on_textchange|Vp2_on_open|Vp2_on_close|vp2_on_long_pressed|vp2_on_mouse_pressed|key pressed|vp2_on_mouse_released|key released|vp2_on_cell_event|vp2_on_keypress|vp2_on_keypressed|vp2_idok|vp2_idcancel|vp2_idyes|vp2_idno|vp2_idabort|vp2_idretry|vp2_idskip|vp2_idack|vp2_idignore|vp2_idreset|vp2_idtrue|vp2_idfalse|vp2_idon|vp2_idoff|PDV_TP|SCRN_MOTION|SCRN_ALARM|SCRN_PROG|SCRN_IDE|SCRN_IO|SCRN_APPL|SCRN_FILE|SCRN_SETUP|SCRN_DATA|SCRN_SERVICE|SCRN_TPINT|SCRN_VP2|SCRN_LOGIN)\\b'
     'name': 'support.constant.pdl2'
   }
 
   # VP2 attribues
   {
-    'match':
-      '.\\b(x|y|z|w|h|name|id|help|attr_form|units|f_color|b_color|error|visible|focusable|enabled|ev_code|ev_mask|t_up|t_down|t_left|t_right|f_name|f_style|f_size|bm_id|cm_id|c_path|comp_1|lun_name|ordinal|image|value|line|text|s_color|u_color|cols|v_gap|h_gap|max_len|min_len|increment|unitsused|message|show|orient|strt|angle|arc_w|arc_h|points)\\b'
+    'match': '.\\b(x|y|z|w|h|name|id|help|attr_form|units|f_color|b_color|error|visible|focusable|enabled|ev_code|ev_mask|t_up|t_down|t_left|t_right|f_name|f_style|f_size|bm_id|cm_id|c_path|comp_1|lun_name|ordinal|image|value|line|text|s_color|u_color|cols|v_gap|h_gap|max_len|min_len|increment|unitsused|message|show|orient|strt|angle|arc_w|arc_h|points)\\b'
     'name': 'entity.name.function.pdl2'
   }
 
@@ -53,8 +51,7 @@
 
   # VP2 functions
   {
-    'match':
-      '\\b(VP2_SCRN_CREATE|VP2_SCRN_ADD|VP2_SCRN_DEL|VP2_SCRN_AVAIL|VP2_SCRN_PDV_GET|VP2_SCRN_REMOVE|VP2_SCRN_SET|VP2_SCRN_STATE|VP2_SEL_SET|VP2_ADD|VP2_REMOVE|VP2_UPDATE|VP2_LOAD|VP2_SAVE|VP2_INFO|VP2_INIT|vp2_pipe_create|vp2_pipe_flush)\\b'
+    'match': '\\b(VP2_SCRN_CREATE|VP2_SCRN_ADD|VP2_SCRN_DEL|VP2_SCRN_AVAIL|VP2_SCRN_PDV_GET|VP2_SCRN_REMOVE|VP2_SCRN_SET|VP2_SCRN_STATE|VP2_SEL_SET|VP2_ADD|VP2_REMOVE|VP2_UPDATE|VP2_LOAD|VP2_SAVE|VP2_INFO|VP2_INIT|vp2_pipe_create|vp2_pipe_flush)\\b'
     'name': 'support.function.pdl2'
   }
 
