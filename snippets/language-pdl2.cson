@@ -21,9 +21,9 @@
     'prefix': 'select'
     'body': """
       SELECT ${1:int_exp} OF
-      \tCASE ${2:int_val_1}:
+      \tCASE ( ${2:int_val_1} ):
       \t\t${3:statement}
-      \tCASE ${4:int_val_2}:
+      \tCASE ( ${4:int_val_2} ):
       \t\t${5:statement}
       \tELSE:
       \t\t${6:statement}
